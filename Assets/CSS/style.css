@@ -1,0 +1,413 @@
+* {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    height:70px;
+    width: 100%;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    background-color: rgb(87, 117, 148);
+    color: rgb(235, 224, 201);
+    z-index: 15;
+}
+
+header menu {
+    padding-inline-start: 0px;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header menu nav ul {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    list-style: none;
+}
+
+header menu nav ul li {
+    border-bottom: 5px solid rgb(0, 153, 255);
+    padding: 5px;
+    margin: 0px 20px;
+    transition: border-bottom .25s;
+}
+
+header menu nav ul li:hover {
+    border-bottom: 5px solid rgb(235, 224, 201);
+}
+
+header menu nav ul li a {
+    text-transform:capitalize;
+    text-decoration: none;
+    color: rgb(235, 224, 201);
+}
+
+h1 {
+    position: relative;
+    bottom: 5px;
+}
+
+figure {
+    float: left;
+    margin: 0 15px;
+    height: 150px;
+    width: 130px;
+    background-image: url(../Images/josh-pic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+ul {
+    padding-inline-start: 0px;
+}
+/* This logo class and hover pseudo class are responsible for the name's styling */
+.logo {
+    color:rgb(235, 224, 201);
+    transition: color .25s;
+}
+
+.logo:hover {
+    color:rgb(0, 153, 255);
+}
+
+.hero-banner {
+    position: relative;
+    padding-top: 70px;
+    width: 100%;
+    min-height: 200px;
+    overflow: hidden;
+    background-image: url(../Images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+}
+
+.hero-banner h2 {
+    position: absolute;
+    bottom: 10px;
+    right: 15%;
+    font-size: 30px;
+    color: rgb(235, 224, 201);
+    padding: 15px;
+    background-color: rgba(54, 74, 94, 0.7);
+}
+
+/* This class makes a blank span stretch the entire width and height of the container, and when placed inside an <a> tag it will make the whole container clickable */
+.link-span {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+/* This flex container holds a row with two items, the label on the left with the class called the side-title and the content on the right in a container called a variation of portfolio-card. */
+.portfolio-container {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /* width: 90%; */
+    margin: 30px auto;
+}
+/* These are the classes for the container of primary content (about me text, portfolio items) for the various sections. */
+.portfolio-card {
+    /* flex: 3 3 75%;
+    display: flex;
+    flex-flow: row wrap; */
+    padding-left: 30px;
+}
+
+.portfolio-card-about {
+    flex: 3 3 75%;
+    padding-left: 30px;
+}
+
+.portfolio-card-contact {
+    flex: 3 3 75%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 30px;
+}
+/* This is the styling for the section titles on the left */
+.side-title {
+    /* flex: 0 1 25%; */
+    border-right:5px solid rgb(87, 117, 148);
+    margin: 0 auto;
+    /* max-width: 25%; */
+}
+
+.side-title h3 {
+    text-align: right;
+    color:rgb(87, 117, 148);
+    font-size: 3em;
+    font-weight: 200;
+    padding-right: 25px;
+}
+/* This is the individual portfolio items */
+.work-card {
+    position: relative;
+    height: 200px;
+    display: flex;
+    margin: 1%;
+    border: 5px solid rgb(87, 117, 148);
+    box-shadow: inset 0 0 0 100vmax rgba(47, 87, 124, 0.35);
+    flex: 1 1 40%;
+    padding: 2%;
+    transition: box-shadow .5s;
+}
+
+.work-card:hover {
+    box-shadow: none;
+}
+/* This is the featured portfolio item */
+.hero-card {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    border: 5px solid rgb(87, 117, 148);
+    margin: 1%;
+    box-shadow: inset 0 0 0 100vmax rgba(47, 87, 124, 0.35);
+    flex: 1 1 100%;
+    padding: 2%;
+    transition: box-shadow .5s;
+}
+
+.hero-card:hover {
+    box-shadow: none;
+}
+/* This is the portfolio item title overlay */
+.work-card-title {
+    position: absolute;
+    left: -2px;
+    bottom: 15px;
+    background-color: rgba(54, 74, 94, 0.8);
+    width: auto;
+    height: 100px;
+    margin: 5px 5px 5px 0px;
+}
+
+.work-card-title h3, .work-card-title p {
+    padding: 0px 10px;
+    color: rgb(235, 224, 201);
+}
+/* this is the additional works portfolio item styling */
+.add-work-card {
+    position: relative;
+    height: 150px;
+    display: flex;
+    margin: 1%;
+    border: 5px solid rgb(87, 117, 148);
+    box-shadow: inset 0 0 0 100vmax rgba(47, 87, 124, 0.35);
+    flex: 1 1 100%;
+    padding: 2%;
+    transition: all .5s;
+}
+
+.add-work-card:hover {
+    box-shadow: none;
+    height: 300px;
+}
+
+.add-work-card-title {
+    position: absolute;
+    left: -2px;
+    bottom: 15px;
+    background-color: rgba(54, 74, 94, 0.8);
+    width: auto;
+    height: 100px;
+    margin: 5px 5px 5px 0px;
+}
+
+.add-work-card-title h3, .add-work-card-title p {
+    padding: 0px 10px;
+    color: rgb(235, 224, 201);
+}
+/* this is the about me portrait */
+.portrait {
+    max-width: 100px;
+    height: auto;
+    float: left;
+    margin: 20px 15px 10px 15px;
+}
+/* this is the contact content styling */
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    flex: 1 1 100%;
+}
+
+.contact li {
+    flex: 1 1 auto;
+    padding: 15px;
+}
+
+.portfolio-list {
+    list-style: none;
+    text-align: right;
+}
+
+.portfolio-list li {
+    padding: 5px 30px;
+    font-size: 20px;
+    color:rgb(87, 117, 148);
+}
+
+.portfolio-list li a {
+    color:rgb(87, 117, 148);
+    text-decoration: none;
+}
+
+.iconz {
+    font-size: 25px;
+}
+
+/* These IDs put background images into each of the portfolio cards. */
+#photography {
+    background-image: url(../Images/photography.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#empireears {
+    background-image: url(../Images/empireears.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#video {
+    background-image: url(../Images/video.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#otis {
+    background-image: url(../Images/otis.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#weather-app {
+    background-image: url(../Images/weather-app.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#budget-tracker {
+    background-image: url(../Images/budget-tracker.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#note-taker {
+    background-image: url(../Images/note-taker.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#rickroll {
+    background-image: url(../Images/rickroll.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#halfway-there {
+    background-image: url(../Images/halfway-there.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#daily-planner {
+    background-image: url(../Images/daily-planner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#professionaleyes {
+    background-image: url(../Images/professionaleyes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#emp-vid {
+    background-image: url(../Images/emp-vid.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* this media inquiry reduces the site to a single column */
+@media screen and (max-width: 962px) {
+    header {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        height: 140px;
+    }
+    header menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    header menu nav {
+        width: 100%;
+    }
+    header menu nav ul {
+        justify-content: space-evenly;
+    }
+    .hero-banner {
+        padding-top: 140px;
+        min-height: 200px;
+    }
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .hero-banner h2 {
+        font-size: 20px;
+    }
+
+    .side-title {
+        text-align: center;
+    }
+    .side-title h3 {
+        font-size: 2em;
+        text-align: center;
+    }
+    .portfolio-card {
+        flex-flow: column;
+        height: 1500px;
+    }
+    .portfolio-card-contact {
+        flex-flow: column;
+    }
+    .hero-card {
+        width:auto;
+        height: 200px;
+    }
+    .work-card {
+        flex: 1 1 100%;
+        height: 200px;
+    }
+}
