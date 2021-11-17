@@ -9,9 +9,7 @@ function App() {
     <div className="App">
       <header>
         <menu>
-          <h2 className="logo pt-3">
-            Josh Watkins - Full Stack Branding Expert
-          </h2>
+          <h2 className="logo pt-3">Josh Watkins</h2>
           <nav>
             <ul className="pt-3">
               <li>
@@ -27,14 +25,16 @@ function App() {
           </nav>
         </menu>
       </header>
-      <div className="hero-banner"></div>
+      <div className="hero-banner">
+        <h2>Full Stack Brand Expert</h2>
+      </div>
       <div className="container">
         <section id="portfolio">
           <section id="about" className="portfolio-container">
-            <div className="side-title col-3">
+            <div className="side-title col-sm-12 col-md-3">
               <h3>About Me</h3>
             </div>
-            <div className="px-3 col-9">
+            <div className="px-3 col-sm-12 col-md-9">
               <figure></figure>
               <p>
                 A dynamic, creative, and innovative global marketing and brand
@@ -58,7 +58,7 @@ function App() {
             </div>
           </section>
           <section id="add-work" className="portfolio-container">
-            <div class="side-title col-3">
+            <div class="side-title col-sm-12 col-md-3">
               <h3>Portfolio</h3>
               <ul className="portfolio-list">
                 <li id="portfolio-app">
@@ -96,146 +96,197 @@ function App() {
                 </li>
               </ul>
             </div>
-            <div class="portfolio-card col-3">
-              <div id="halfway-there" className="add-work-card">
-                <a
-                  target="blank"
-                  href="https://donk1557.github.io/halfway-there/"
-                >
-                  <span className="link-span"></span>
-                </a>
-                <div className="add-work-card-title">
-                  <h3>Halfway There</h3>
-                  <p>Geographically Optimized Socialization</p>
+            <div class="portfolio-card col-sm-12 col-md-9">
+              {port === "e-com" || port === "initial" ? (
+                <div id="empireears" className="add-work-card">
+                  <a target="blank" href="https://empireears.com">
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="add-work-card-title">
+                    <h3>Empire Ears</h3>
+                    <p>E-Commerce Build</p>
+                  </div>
                 </div>
-              </div>
-              <div id="professionaleyes" className="add-work-card">
-                <a
-                  target="blank"
-                  href="https://professionaleyes.herokuapp.com/"
-                >
-                  <span className="link-span"></span>
-                </a>
-                <div className="work-card-title">
-                  <h3>Professional Eyes</h3>
-                  <p>Communication Utility</p>
+              ) : (
+                <div></div>
+              )}
+              {port === "appDev" || port === "initial" ? (
+                <div id="halfway-there" className="add-work-card">
+                  <a
+                    target="blank"
+                    href="https://donk1557.github.io/halfway-there/"
+                  >
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="add-work-card-title">
+                    <h3>Halfway There</h3>
+                    <p>Geographically Optimized Socialization</p>
+                  </div>
                 </div>
-              </div>
-              <div id="daily-planner" className="add-work-card">
-                <a
-                  target="blank"
-                  href="https://joshuakwatkins.github.io/Daily-Planner/"
-                >
-                  <span className="link-span"></span>
-                </a>
-                <div className="work-card-title">
-                  <h3>Daily Planner</h3>
-                  <p>Productivity App</p>
+              ) : (
+                <div></div>
+              )}
+              {port === "appDev" ? (
+                <div id="professionaleyes" className="add-work-card">
+                  <a
+                    target="blank"
+                    href="https://professionaleyes.herokuapp.com/"
+                  >
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="work-card-title">
+                    <h3>Professional Eyes</h3>
+                    <p>Communication Utility</p>
+                  </div>
                 </div>
-              </div>
-              <div id="weather-app" className="add-work-card">
-                <a
-                  target="blank"
-                  href="https://joshuakwatkins.github.io/weather-dashboard/"
-                >
-                  <span className="link-span"></span>
-                </a>
-                <div className="work-card-title">
-                  <h3>Weather Dashboard</h3>
-                  <p>Location Based Weather Services</p>
+              ) : (
+                <div></div>
+              )}
+              {port === "appDev" ? (
+                <div id="daily-planner" className="add-work-card">
+                  <a
+                    target="blank"
+                    href="https://joshuakwatkins.github.io/Daily-Planner/"
+                  >
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="work-card-title">
+                    <h3>Daily Planner</h3>
+                    <p>Productivity App</p>
+                  </div>
                 </div>
-              </div>
-              <div id="budget-tracker" className="add-work-card">
-                <a
-                  target="blank"
-                  href="https://jkw-budget-tracker.herokuapp.com/"
-                >
-                  <span className="link-span"></span>
-                </a>
-                <div className="work-card-title">
-                  <h3>Budget Tracker</h3>
-                  <p>Financial App with Offline Capabilities</p>
+              ) : (
+                <div></div>
+              )}
+              {port === "appDev" ? (
+                <div id="weather-app" className="add-work-card">
+                  <a
+                    target="blank"
+                    href="https://joshuakwatkins.github.io/weather-dashboard/"
+                  >
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="work-card-title">
+                    <h3>Weather Dashboard</h3>
+                    <p>Location Based Weather Services</p>
+                  </div>
                 </div>
-              </div>
-              <div id="note-taker" className="add-work-card">
-                <a target="blank" href="https://jkw-note-taker.herokuapp.com/">
-                  <span className="link-span"></span>
-                </a>
-                <div className="work-card-title">
-                  <h3>Note Taker</h3>
-                  <p>Track Notes and To-Do's</p>
+              ) : (
+                <div></div>
+              )}
+              {port === "appDev" || port === "initial" ? (
+                <div id="budget-tracker" className="add-work-card">
+                  <a
+                    target="blank"
+                    href="https://jkw-budget-tracker.herokuapp.com/"
+                  >
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="work-card-title">
+                    <h3>Budget Tracker</h3>
+                    <p>Financial App with Offline Capabilities</p>
+                  </div>
                 </div>
-              </div>
-              <div id="photography" className="add-work-card">
-                <a target="blank" href="https://joshwatkins.photo">
-                  <span className="link-span"></span>
-                </a>
-                <div className="add-work-card-title">
-                  <h3>Photography</h3>
-                  <p>joshwatkins.photo</p>
+              ) : (
+                <div></div>
+              )}
+              {port === "appDev" ? (
+                <div id="note-taker" className="add-work-card">
+                  <a
+                    target="blank"
+                    href="https://jkw-note-taker.herokuapp.com/"
+                  >
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="work-card-title">
+                    <h3>Note Taker</h3>
+                    <p>Track Notes and To-Do's</p>
+                  </div>
                 </div>
-              </div>
-              <div id="emp-vid" className="add-work-card">
-                <a
-                  target="blank"
-                  href="https://www.youtube.com/watch?v=lhBWEqWH470"
-                >
-                  <span className="link-span"></span>
-                </a>
-                <div className="add-work-card-title">
-                  <h3>Production Video</h3>
-                  <p>Overview of the Empire Ears Lab</p>
+              ) : (
+                <div></div>
+              )}
+              {port === "media" || port === "initial" || port === "e-com" ? (
+                <div id="photography" className="add-work-card">
+                  <a target="blank" href="https://joshwatkins.photo">
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="add-work-card-title">
+                    <h3>Photography</h3>
+                    <p>joshwatkins.photo</p>
+                  </div>
                 </div>
-              </div>
-              <div id="empireears" className="add-work-card">
-                <a target="blank" href="https://empireears.com">
-                  <span className="link-span"></span>
-                </a>
-                <div className="add-work-card-title">
-                  <h3>Empire Ears</h3>
-                  <p>E-Commerce Build</p>
+              ) : (
+                <div></div>
+              )}
+              {port === "media" || port === "e-com" ? (
+                <div id="emp-vid" className="add-work-card">
+                  <a
+                    target="blank"
+                    href="https://www.youtube.com/watch?v=lhBWEqWH470"
+                  >
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="add-work-card-title">
+                    <h3>Production Video</h3>
+                    <p>Overview of the Empire Ears Lab</p>
+                  </div>
                 </div>
-              </div>
-              <div id="video" className="add-work-card">
-                <a
-                  target="blank"
-                  href="https://www.youtube.com/watch?v=3QNR8WdXDOs"
-                >
-                  <span className="link-span"></span>
-                </a>
-                <div className="add-work-card-title">
-                  <h3>Video</h3>
-                  <p>Lunch For The Week</p>
+              ) : (
+                <div></div>
+              )}
+              {port === "media" || port === "initial" ? (
+                <div id="video" className="add-work-card">
+                  <a
+                    target="blank"
+                    href="https://www.youtube.com/watch?v=3QNR8WdXDOs"
+                  >
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="add-work-card-title">
+                    <h3>Video</h3>
+                    <p>Lunch For The Week</p>
+                  </div>
                 </div>
-              </div>
-              <div id="otis" className="add-work-card">
-                <a
-                  target="blank"
-                  href="https://photos.app.goo.gl/ros2HJSkYMJxqgbG9"
-                >
-                  <span className="link-span"></span>
-                </a>
-                <div className="add-work-card-title">
-                  <h3>Otis</h3>
-                  <p>5 Star Wonderpup</p>
+              ) : (
+                <div></div>
+              )}
+              {port === "media" ? (
+                <div id="otis" className="add-work-card">
+                  <a
+                    target="blank"
+                    href="https://photos.app.goo.gl/ros2HJSkYMJxqgbG9"
+                  >
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="add-work-card-title">
+                    <h3>Otis</h3>
+                    <p>5 Star Wonderpup</p>
+                  </div>
                 </div>
-              </div>
-              <div id="rickroll" className="add-work-card">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                  <span className="link-span"></span>
-                </a>
-                <div className="add-work-card-title">
-                  <h3>Not A Rickroll</h3>
-                  <p>Totally not a rickroll</p>
+              ) : (
+                <div></div>
+              )}
+              {port === "media" ? (
+                <div id="rickroll" className="add-work-card">
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <span className="link-span"></span>
+                  </a>
+                  <div className="add-work-card-title">
+                    <h3>Not A Rickroll</h3>
+                    <p>Totally not a rickroll</p>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div></div>
+              )}
             </div>
           </section>
           <section id="contact" className="portfolio-container">
-            <div className="side-title col-3">
+            <div className="side-title col-sm-12 col-md-3">
               <h3>Contact</h3>
             </div>
-            <div className="portfolio-card-contact">
+            <div className="portfolio-card col-sm-12 col-md-9">
               <ul className="contact">
                 <li>
                   <span className="iconz">🔗</span>{" "}
