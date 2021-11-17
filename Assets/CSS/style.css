@@ -397,7 +397,7 @@ ul {
     }
     .portfolio-card {
         flex-flow: column;
-        height: 1500px;
+        /* height: 1500px; */
     }
     .portfolio-card-contact {
         flex-flow: column;
@@ -409,5 +409,11 @@ ul {
     .work-card {
         flex: 1 1 100%;
         height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-card {
+        padding-left: 0px;
     }
 }
