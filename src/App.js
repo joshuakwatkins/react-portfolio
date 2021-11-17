@@ -31,10 +31,10 @@ function App() {
       <div className="container">
         <section id="portfolio">
           <section id="about" className="portfolio-container">
-            <div className="side-title col-sm-12 col-md-3">
+            <div className="side-title col-12 col-md-3">
               <h3>About Me</h3>
             </div>
-            <div className="px-3 col-sm-12 col-md-9">
+            <div className="px-3 col-12 col-md-9">
               <figure></figure>
               <p>
                 A dynamic, creative, and innovative global marketing and brand
@@ -58,7 +58,7 @@ function App() {
             </div>
           </section>
           <section id="add-work" className="portfolio-container">
-            <div class="side-title col-sm-12 col-md-3">
+            <div className="side-title col-12 col-md-3">
               <h3>Portfolio</h3>
               <ul className="portfolio-list">
                 <li id="portfolio-app">
@@ -96,7 +96,7 @@ function App() {
                 </li>
               </ul>
             </div>
-            <div class="portfolio-card col-sm-12 col-md-9">
+            <div class="portfolio-card col-12 col-md-9">
               {port === "e-com" || port === "initial" ? (
                 <div id="empireears" className="add-work-card">
                   <a target="blank" href="https://empireears.com">
@@ -283,10 +283,10 @@ function App() {
             </div>
           </section>
           <section id="contact" className="portfolio-container">
-            <div className="side-title col-sm-12 col-md-3">
+            <div className="side-title col-12 col-md-3">
               <h3>Contact</h3>
             </div>
-            <div className="portfolio-card col-sm-12 col-md-9">
+            <div className="portfolio-card col-12 col-md-9">
               <ul className="contact">
                 <li>
                   <span className="iconz">🔗</span>{" "}
