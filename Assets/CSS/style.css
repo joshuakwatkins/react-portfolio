@@ -56,9 +56,9 @@ h1 {
 
 figure {
     float: left;
-    margin: 0 15px;
-    height: 150px;
-    width: 130px;
+    margin: 0 20px;
+    height: 300px;
+    width: 200px;
     background-image: url(../Images/josh-pic.jpg);
     background-position: center;
     background-size: cover;
