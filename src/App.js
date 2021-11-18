@@ -61,6 +61,17 @@ function App() {
             <div className="side-title col-12 col-md-3">
               <h3>Portfolio</h3>
               <ul className="portfolio-list">
+                <li id="portfolio-init">
+                  <a
+                    href="#initial"
+                    onClick={() => handlePortChange("initial")}
+                    className={
+                      port === "initial" ? "p-2 bg-danger text-white" : "p2"
+                    }
+                  >
+                    Select Works
+                  </a>
+                </li>
                 <li id="portfolio-app">
                   <a
                     href="#appDev"
@@ -303,10 +314,11 @@ function App() {
                   <a href="https://github.com/joshuakwatkins">Github</a>
                 </li>
                 <li>
-                  <span className="iconz">📱</span> Phone: 846 737 1302
+                  <span className="iconz">📱</span>{" "}
+                  <a href="tel:8467371302">846 737 1302</a>
                 </li>
                 <li>
-                  <span className="iconz">✉</span> Email:{" "}
+                  <span className="iconz">✉</span>{" "}
                   <a href="mailto: joshwatkinssfs@gmail.com">Email Me!</a>
                 </li>
               </ul>
